@@ -10,4 +10,7 @@ describe('#ping_pong') do
   it("outputs [1, 2, ping] when the user enters 3") do
     expect(ping_pong(3)).to(eq([1,2,"ping"]))
   end
+  it("outputs [1, 2, ping, 4, pong] when the user enters 5") do
+    expect(ping_pong(5)).to(eq([1,2,"ping",4,"pong"]))
+  end
 end
